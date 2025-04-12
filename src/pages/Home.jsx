@@ -1,11 +1,18 @@
 import TierCard from "../components/TierCard";
+import TierBasicImage from "../assets/images/undraw_file-search_cbur.svg";
+import TierBusinessImage from "../assets/images/undraw_data-trends_kv5v.svg";
+import TierEntrepreneurImage from "../assets/images/undraw_algorithm-execution_rksm.svg";
+import HeroImage from "../assets/images/undraw_organizing-data_uns9.svg";
+import AboutImage from "../assets/images/undraw_vibe-coding_mjme.svg";
+import PricingImage from "../assets/images/undraw_online-payments_p97e.svg";
+import ContactImage from "../assets/images/undraw_people-search_xpq4.svg";
 
 const tiers = [
     {
         title: "Basic",
         price: "Rp 99.000",
         features: ["Catat barang masuk", "Catat barang keluar", "Catat keuntungan"],
-        illustration: "/images/undraw_file-search_cbur.svg",
+        illustration: TierBasicImage,
     },
     {
         title: "Business",
@@ -16,7 +23,7 @@ const tiers = [
             "Analisa penjualan (Chart)",
             "Support 7x24 Jam",
         ],
-        illustration: "/images/undraw_data-trends_kv5v.svg",
+        illustration: TierBusinessImage,
     },
     {
         title: "Entrepreneur",
@@ -26,7 +33,7 @@ const tiers = [
             "Export ke Excel",
             "AI Prediksi penghasilan",
         ],
-        illustration: "/images/undraw_algorithm-execution_rksm.svg",
+        illustration: TierEntrepreneurImage,
     },
 ];
 
@@ -36,7 +43,7 @@ function Home() {
             {/* Hero Section */}
             <section className="text-center py-20 px-6 bg-white">
                 <img
-                    src="/images/undraw_organizing-data_uns9.svg"
+                    src={HeroImage}
                     alt="Hero Illustration"
                     className="mx-auto w-60 mb-6"
                 />
@@ -49,7 +56,7 @@ function Home() {
             {/* About Section */}
             <section id="about" className="py-16 px-6 bg-gray-100 text-center">
                 <img
-                    src="/images/undraw_vibe-coding_mjme.svg"
+                    src={AboutImage}
                     alt="About Illustration"
                     className="mx-auto w-52 mb-6"
                 />
@@ -63,7 +70,7 @@ function Home() {
             {/* Pricing Section */}
             <section id="pricing" className="py-16 px-6 text-center bg-gray-50">
                 <img
-                    src="/images/undraw_online-payments_p97e.svg"
+                    src={PricingImage}
                     alt="Pricing Illustration"
                     className="mx-auto w-52 mb-6"
                 />
@@ -78,7 +85,7 @@ function Home() {
             {/* Contact Section */}
             <section id="contact" className="py-16 px-6 bg-gray-100 text-center relative">
                 <img
-                    src="/images/undraw_people-search_xpq4.svg"
+                    src={ContactImage}
                     alt="Contact Illustration"
                     className="mx-auto w-44 mb-6"
                 />

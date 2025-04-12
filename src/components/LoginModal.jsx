@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import LoginImage from "../assets/images/undraw_sign-up_z2ku.svg";
 
 function LoginModal({ onClose }) {
     return (
@@ -10,7 +11,7 @@ function LoginModal({ onClose }) {
                 </button>
 
                 <img
-                    src="/images/undraw_sign-up_z2ku.svg"
+                    src={LoginImage}
                     alt="Login Illustration"
                     className="w-28 h-28 mx-auto mb-4"
                 />
